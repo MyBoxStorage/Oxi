@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Reservas e Eventos | Ôxi Cozinha Nordestina</title>
+  <meta name="description" content="Fale com o Ôxi: reservas, eventos privados e imprensa. Rua das Pitangueiras, 142 — Centro, Itacaré, BA." />
+  <meta name="theme-color" content="#3D4A2E" />
+  <link rel="icon" type="image/svg+xml" href="assets/svg/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/typography.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css" />
+  <link rel="stylesheet" href="assets/css/transitions.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+
+<div id="custom-cursor" aria-hidden="true">
+  <svg viewBox="0 0 28 28" fill="none">
+    <path d="M14 3 C15 3,16.5 4,17 6 C17.5 8,17 11,16 14 C15 17,14 20,14 23 C13 20,12 17,11 14 C10 11,9.5 8,10 6 C10.5 4,13 3,14 3Z" fill="#A0522D"/>
+    <path d="M14 1 C13 0,11.5 0.5,11 2 C10.5 1,9.5 1,9 2.5 C10 2,11 2.5,11 3.5 C11.5 2.5,12.5 2,14 1Z" fill="#3D4A2E" opacity="0.9"/>
+    <path d="M14 23 C13.8 24.5,13.9 26,14 27 C14.1 26,14.2 24.5,14 23Z" fill="#8B3A1A"/>
+  </svg>
+</div>
+<div id="page-transition" aria-hidden="true"></div>
+
+<header class="navbar" role="banner">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Ôxi — Página Inicial">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" fill="none">
+        <g transform="translate(10,8)">
+          <path d="M30 6 C28 3,25 2,23 4.5 C22 6,23 9,24.5 10.5" stroke="#A0522D" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <path d="M23 4.5 C20 1.5,17 3.5,19 7 C20.5 9,23 8,23 4.5Z" fill="#3D4A2E" opacity="0.8"/>
+          <path d="M24.5 10.5 C26 12,29 15.5,30.5 22 C32 28.5,31.5 36,29.5 42 C28 46.5,25 49.5,22 50 C19 50.5,16 48.5,14.5 44.5 C12.5 39,12.5 31.5,14 25 C15.5 18.5,19 13.5,21.5 11.5 C22.5 10.5,23.5 10.5,24.5 10.5Z" fill="#A0522D"/>
+          <path d="M22 50 C21.5 52.5,21 55.5,21.5 57.5 C21.8 59,23 59,23.3 57.5 C23.8 55.5,23 52.5,22 50Z" fill="#8B3A1A"/>
+        </g>
+        <text x="65" y="62" font-family="'Cormorant Garamond',Georgia,serif" font-size="58" font-weight="300" letter-spacing="6" fill="#3D4A2E">ÔXI</text>
+        <line x1="65" y1="70" x2="268" y2="70" stroke="#A0522D" stroke-width="0.7" opacity="0.5"/>
+        <text x="65" y="83" font-family="'DM Sans','Helvetica Neue',sans-serif" font-size="8.5" font-weight="300" letter-spacing="4.5" fill="#3D4A2E" opacity="0.7">COZINHA NORDESTINA</text>
+      </svg>
+    </a>
+    <nav class="navbar__nav" aria-label="Menu principal">
+      <a href="cardapio.html" class="navbar__link">Cardápio</a>
+      <a href="chef.html" class="navbar__link">Chef</a>
+      <a href="nossa-terra.html" class="navbar__link">Nossa Terra</a>
+      <a href="eventos.html" class="navbar__link">Eventos</a>
+      <a href="blog/post-1.html" class="navbar__link">Blog</a>
+      <a href="contato.html" class="navbar__link">Contato</a>
+    </nav>
+    <a href="contato.html" class="navbar__cta">Reservar →</a>
+    <button class="navbar__hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="navbar__fullmenu" role="dialog" aria-label="Menu de navegação">
+  <div class="fullmenu__bg-text">NORDESTE</div>
+  <nav class="fullmenu__nav">
+    <a href="index.html"       class="fullmenu__link">Início</a>
+    <a href="cardapio.html"    class="fullmenu__link">Cardápio</a>
+    <a href="chef.html"        class="fullmenu__link">Chef</a>
+    <a href="nossa-terra.html" class="fullmenu__link">Nossa Terra</a>
+    <a href="eventos.html"     class="fullmenu__link">Eventos</a>
+    <a href="blog/post-1.html" class="fullmenu__link">Blog</a>
+    <a href="contato.html"     class="fullmenu__link">Contato</a>
+  </nav>
+  <div class="fullmenu__footer">
+    <p>@oxirestaurante</p>
+    <p>Itacaré, Bahia — Brasil</p>
+  </div>
+</div>
+
+<main id="main-content">
+
+  <!-- Hero 40vh fundo sólido verde-musgo -->
+  <section class="page-hero page-hero--contato gsap-fade-up" aria-label="Contato">
+    <div class="page-hero__content">
+      <h1 class="page-hero__title">Fale com a gente</h1>
+      <p class="page-hero__subtitle">Reservas, eventos e tudo mais</p>
+    </div>
+  </section>
+
+  <!-- 2 colunas: formulário + informações -->
+  <section class="contato-page section-padding gsap-fade-up" aria-labelledby="contato-title">
+    <div class="container">
+      <div class="contato-grid gsap-stagger">
+        <div class="contato-form-wrap gsap-stagger-item">
+          <form class="contato-form form-oxi" novalidate>
+            <div class="form__body">
+              <input type="text" name="nome" placeholder="Nome" required class="form-input"/>
+              <input type="email" name="email" placeholder="E-mail" required class="form-input"/>
+              <select name="assunto" required class="form-input">
+                <option value="">Assunto</option>
+                <option value="reserva">Reserva</option>
+                <option value="evento">Evento Privado</option>
+                <option value="imprensa">Imprensa</option>
+                <option value="outro">Outro</option>
+              </select>
+              <textarea name="mensagem" placeholder="Mensagem" required class="form-input form-textarea" rows="6"></textarea>
+              <button type="submit" class="btn btn--primary contato-form__submit">Enviar mensagem →</button>
+            </div>
+            <div class="form__success">
+              <svg class="success-logo" viewBox="0 0 60 60" fill="none">
+                <circle cx="30" cy="30" r="28" stroke="#A0522D" stroke-width="1.5" opacity="0.5"/>
+                <path d="M18 30 L26 38 L42 22" stroke="#A0522D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3>Vixe, que ótimo!</h3>
+              <p>Entraremos em contato em breve.<br/><br/>
+              <strong style="color:var(--ferrugem)">Curtiu o design do site?</strong><br/>
+              <a href="https://globallanding.com.br" target="_blank" rel="noopener" style="color:var(--ferrugem)">Entre em contato com a Global Landing →</a></p>
+            </div>
+          </form>
+        </div>
+
+        <div class="contato-info gsap-stagger-item">
+          <h2 id="contato-title" class="contato-info__title">Informações</h2>
+          <div class="contato-info__items">
+            <div class="contato-item">
+              <span class="contato-item__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div class="contato-item__content">
+                <span class="contato-item__label">Endereço</span>
+                <p class="contato-item__value">Rua das Pitangueiras, 142 — Centro, Itacaré, BA · 45530-000</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <span class="contato-item__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <div class="contato-item__content">
+                <span class="contato-item__label">Horários</span>
+                <p class="contato-item__value">Ter–Sex: 12h–15h e 19h–23h<br/>Sáb–Dom: 12h–16h e 19h–00h<br/>Segunda: Fechado</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <span class="contato-item__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div class="contato-item__content">
+                <span class="contato-item__label">Telefone</span>
+                <p class="contato-item__value"><a href="tel:+5573999990001">(73) 99999-0001</a></p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <span class="contato-item__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div class="contato-item__content">
+                <span class="contato-item__label">E-mail</span>
+                <p class="contato-item__value"><a href="mailto:ola@oxi.com.br">ola@oxi.com.br</a></p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <span class="contato-item__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+              </span>
+              <div class="contato-item__content">
+                <span class="contato-item__label">Redes</span>
+                <p class="contato-item__value">Instagram @oxirestaurante · TikTok @oxirestaurante</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="contato-mapa section-padding gsap-fade-up" aria-label="Localização">
+  <div class="container" style="display:flex; flex-direction:column; align-items:center; gap:1rem;">
+    <svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg"
+      style="max-width:480px; width:100%;"
+      aria-label="Mapa de Itacaré, Bahia">
+
+      <!-- Oceano / fundo -->
+      <rect width="400" height="460" fill="#f0ebe0" rx="16"/>
+
+      <!-- Área do oceano -->
+      <path d="M280 0 Q320 80 340 180 Q360 280 350 380 Q340 440 300 460 L400 460 L400 0 Z"
+        fill="#c8dde8" opacity="0.4"/>
+
+      <!-- Contorno da península de Itacaré (simplificado) -->
+      <path d="
+        M60 40
+        Q80 30 120 35
+        Q160 38 200 50
+        Q240 62 260 90
+        Q280 118 275 150
+        Q270 180 255 200
+        Q240 220 230 250
+        Q220 278 225 310
+        Q230 340 215 365
+        Q200 388 180 400
+        Q158 412 135 408
+        Q110 404 92 388
+        Q72 370 65 345
+        Q55 318 58 288
+        Q60 258 70 230
+        Q80 202 75 172
+        Q68 140 62 110
+        Q55 78 60 40Z"
+        fill="#e8dfc8" stroke="#8B6F47" stroke-width="1.5" opacity="0.9"/>
+
+      <!-- Rio de Contas (linha azul ao norte) -->
+      <path d="M20 80 Q60 70 100 75 Q140 80 170 95 Q200 108 220 100"
+        fill="none" stroke="#7baac0" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+      <text x="22" y="68" font-family="Georgia, serif" font-size="9"
+        fill="#7baac0" opacity="0.8">Rio de Contas</text>
+
+      <!-- Label Oceano -->
+      <text x="310" y="200" font-family="Georgia, serif" font-size="11"
+        fill="#5a8a9f" opacity="0.7" transform="rotate(90, 310, 200)">Oceano Atlântico</text>
+
+      <!-- Mata Atlântica (textura pontilhada) -->
+      <g fill="#7a9e6a" opacity="0.25">
+        <circle cx="100" cy="150" r="18"/>
+        <circle cx="130" cy="135" r="14"/>
+        <circle cx="85" cy="175" r="12"/>
+        <circle cx="115" cy="200" r="16"/>
+        <circle cx="145" cy="180" r="13"/>
+        <circle cx="90" cy="220" r="11"/>
+        <circle cx="120" cy="240" r="15"/>
+        <circle cx="150" cy="230" r="12"/>
+        <circle cx="80" cy="260" r="10"/>
+      </g>
+
+      <!-- Pin de localização -->
+      <g transform="translate(175, 280)">
+        <!-- Sombra -->
+        <ellipse cx="0" cy="32" rx="8" ry="3" fill="rgba(0,0,0,0.15)"/>
+        <!-- Pin corpo -->
+        <path d="M0 32 Q-14 18 -14 8 A14 14 0 0 1 14 8 Q14 18 0 32Z"
+          fill="#A0522D"/>
+        <!-- Pin centro -->
+        <circle cx="0" cy="8" r="5" fill="#f5edd6"/>
+      </g>
+
+      <!-- Label Ôxi -->
+      <rect x="145" y="318" width="60" height="20" rx="4"
+        fill="white" opacity="0.85"/>
+      <text x="175" y="332" font-family="Georgia, serif" font-size="11"
+        fill="#A0522D" text-anchor="middle" font-style="italic">Ôxi</text>
+
+      <!-- Label Itacaré -->
+      <text x="155" y="260" font-family="Georgia, serif" font-size="13"
+        fill="#5c4a30" text-anchor="middle" opacity="0.7">Itacaré</text>
+
+      <!-- Bússola simples -->
+      <g transform="translate(355, 50)">
+        <circle cx="0" cy="0" r="16" fill="white" opacity="0.7"
+          stroke="#A0522D" stroke-width="1"/>
+        <text x="0" y="-5" font-size="8" text-anchor="middle"
+          fill="#A0522D" font-family="Georgia">N</text>
+        <line x1="0" y1="-12" x2="0" y2="12"
+          stroke="#A0522D" stroke-width="1" opacity="0.5"/>
+        <line x1="-12" y1="0" x2="12" y2="0"
+          stroke="#A0522D" stroke-width="1" opacity="0.5"/>
+        <polygon points="0,-12 -3,-4 3,-4" fill="#A0522D"/>
+      </g>
+
+    </svg>
+
+    <p style="font-style:italic; font-size:0.875rem; color:#8B6F47; text-align:center;">
+      Rua das Pitangueiras, 142 — Centro, Itacaré, BA
+    </p>
+  </div>
+</section>
+
+  <!-- Como Chegar (3 cards) -->
+  <section class="contato-como-chegar section-padding gsap-fade-up" aria-labelledby="como-chegar-title">
+    <div class="container">
+      <div class="section-header gsap-fade-up" style="text-align: center;">
+        <span class="overline">Acesso</span>
+        <h2 id="como-chegar-title">Como chegar</h2>
+      </div>
+      <div class="contato-como-chegar__grid gsap-stagger">
+        <article class="contato-como-card gsap-stagger-item">
+          <span class="contato-como-card__icon" aria-hidden="true" style="color: var(--cor-ferrugem);"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20H4v-4l3-8h18l3 8v4h-2"/><rect x="6" y="18" width="20" height="6" rx="1"/><circle cx="10" cy="26" r="2"/><circle cx="22" cy="26" r="2"/><path d="M8 12h16"/></svg></span>
+          <h3 class="contato-como-card__title">De carro</h3>
+          <p class="contato-como-card__text">4h30 de Salvador · 2h30 de Ilhéus</p>
+        </article>
+        <article class="contato-como-card gsap-stagger-item">
+          <span class="contato-como-card__icon" aria-hidden="true" style="color: var(--cor-ferrugem);"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-4 4 2 8-10 2 2-6 10 4 2-1 3-5-2-2 4-3-1 1-4-6-2z"/></svg></span>
+          <h3 class="contato-como-card__title">De avião</h3>
+          <p class="contato-como-card__text">Aeroporto de Ilhéus (IOS) · 2h30 de carro até Itacaré</p>
+        </article>
+        <article class="contato-como-card gsap-stagger-item">
+          <span class="contato-como-card__icon" aria-hidden="true" style="color: var(--cor-ferrugem);"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="20" height="16" rx="2"/><path d="M6 14h20"/><path d="M12 6v8M20 6v8"/><circle cx="11" cy="26" r="2"/><circle cx="21" cy="26" r="2"/><path d="M9 22v4M23 22v4"/></svg></span>
+          <h3 class="contato-como-card__title">De ônibus</h3>
+          <p class="contato-como-card__text">Linhas regulares de Salvador e Ilhéus até o Terminal de Itacaré</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Ôxi Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" fill="none" style="width:140px">
+          <g transform="translate(10,8)">
+            <path d="M30 6 C28 3,25 2,23 4.5 C22 6,23 9,24.5 10.5" stroke="#A0522D" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M23 4.5 C20 1.5,17 3.5,19 7 C20.5 9,23 8,23 4.5Z" fill="#3D4A2E" opacity="0.8"/>
+            <path d="M24.5 10.5 C26 12,29 15.5,30.5 22 C32 28.5,31.5 36,29.5 42 C28 46.5,25 49.5,22 50 C19 50.5,16 48.5,14.5 44.5 C12.5 39,12.5 31.5,14 25 C15.5 18.5,19 13.5,21.5 11.5 C22.5 10.5,23.5 10.5,24.5 10.5Z" fill="#A0522D"/>
+            <path d="M22 50 C21.5 52.5,21 55.5,21.5 57.5 C21.8 59,23 59,23.3 57.5 C23.8 55.5,23 52.5,22 50Z" fill="#8B3A1A"/>
+          </g>
+          <text x="65" y="62" font-family="'Cormorant Garamond',Georgia,serif" font-size="58" font-weight="300" letter-spacing="6" fill="#3D4A2E">ÔXI</text>
+          <line x1="65" y1="70" x2="268" y2="70" stroke="#A0522D" stroke-width="0.7" opacity="0.5"/>
+          <text x="65" y="83" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="300" letter-spacing="4.5" fill="#3D4A2E" opacity="0.7">COZINHA NORDESTINA</text>
+        </svg>
+        <span class="footer__logo-text">Ôxi</span>
+      </a>
+      <p class="footer__tagline">Onde o sertão vira arte</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram do Ôxi"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="#" aria-label="TikTok do Ôxi"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.8 1.54V6.79a4.85 4.85 0 01-1.03-.1z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__nav">
+      <div class="footer__nav-col"><h5>Navegação</h5><ul><li><a href="index.html">Início</a></li><li><a href="cardapio.html">Cardápio</a></li><li><a href="chef.html">O Chef</a></li><li><a href="nossa-terra.html">Nossa Terra</a></li></ul></div>
+      <div class="footer__nav-col"><h5>Experiências</h5><ul><li><a href="eventos.html">Aula de Tapioca</a></li><li><a href="eventos.html">Jantar às Cegas</a></li><li><a href="eventos.html">Cozinha Aberta</a></li><li><a href="blog/post-1.html">Blog</a></li></ul></div>
+      <div class="footer__nav-col"><h5>Contato</h5><ul><li><a href="contato.html">Reservas</a></li><li><a href="tel:+5573999990001">(73) 99999-0001</a></li><li><a href="contato.html">Eventos Privados</a></li><li><a href="style-guide.html">Style Guide</a></li></ul></div>
+    </div>
+  </div>
+  <div class="footer__address-cards">
+    <div class="footer__address-card"><h4>Endereço</h4><p>Rua das Pitangueiras, 142<br/>Centro · Itacaré, BA · 45530-000</p></div>
+    <div class="footer__address-card"><h4>Horários</h4><p>Ter–Sex: 12h–15h e 19h–23h<br/>Sáb–Dom: 12h–16h e 19h–00h<br/>Segunda: fechado</p></div>
+    <div class="footer__address-card"><h4>Contato</h4><p><a href="tel:+5573999990001">(73) 99999-0001</a><br/><a href="mailto:ola@oxi.com.br">ola@oxi.com.br</a></p></div>
+  </div>
+  <div class="footer__giant-text" aria-hidden="true">ÔXI</div>
+  <div class="footer__bottom">
+    <p>Ôxi © 2025 — Itacaré, Bahia</p>
+    <p>Design por <a href="https://globallanding.com.br" target="_blank" rel="noopener">Global Landing →</a></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="assets/js/preloader.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/transitions.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/marquee.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js" defer></script>
+</body>
+</html>

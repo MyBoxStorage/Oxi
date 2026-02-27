@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ôxi — Cozinha Nordestina | Itacaré, Bahia</title>
+  <meta name="description" content="Ôxi Cozinha Nordestina — Ingredientes da nossa terra, técnica do mundo. Restaurante contemporâneo em Itacaré, Bahia." />
+  <meta name="theme-color" content="#3D4A2E" />
+  <link rel="icon" type="image/svg+xml" href="assets/svg/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/typography.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css" />
+  <link rel="stylesheet" href="assets/css/transitions.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" class="preloader">
+  <div class="preloader__logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" fill="none">
+      <g transform="translate(18,12)">
+        <path d="M38 8 C36 4,32 2,30 6 C29 8,30 12,32 14" stroke="#F5EDD6" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.7"/>
+        <path d="M30 6 C26 2,22 5,25 9 C27 11,30 10,30 6Z" fill="#F5EDD6" opacity="0.6"/>
+        <path d="M32 14 C34 16,38 20,40 28 C42 36,41 46,38 54 C36 60,32 64,28 65 C24 66,20 63,18 58 C15 51,15 42,17 34 C19 26,24 18,28 15 C30 13,31 13,32 14Z" fill="#A0522D"/>
+        <path d="M26 18 C24 22,22 30,22 38 C22 44,23 50,25 55" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M28 65 C27 68,26 72,27 75 C27.5 77,29 77,29.5 75 C30 72,29 68,28 65Z" fill="#8B3A1A"/>
+      </g>
+      <text x="78" y="78" font-family="'Cormorant Garamond',Georgia,serif" font-size="72" font-weight="300" letter-spacing="8" fill="#F5EDD6">ÔXI</text>
+      <line x1="78" y1="88" x2="308" y2="88" stroke="#A0522D" stroke-width="0.8" opacity="0.7"/>
+      <text x="78" y="104" font-family="'DM Sans','Helvetica Neue',sans-serif" font-size="10" font-weight="300" letter-spacing="5" fill="#F5EDD6" opacity="0.65">COZINHA NORDESTINA</text>
+    </svg>
+  </div>
+  <p class="preloader__tagline">Itacaré, Bahia</p>
+  <div class="preloader__progress">
+    <div class="preloader__progress-bar"></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="custom-cursor">
+  <svg viewBox="0 0 28 28" fill="none">
+    <path d="M14 3 C15 3,16.5 4,17 6 C17.5 8,17 11,16 14 C15 17,14 20,14 23 C13 20,12 17,11 14 C10 11,9.5 8,10 6 C10.5 4,13 3,14 3Z" fill="#A0522D"/>
+    <path d="M14 1 C13 0,11.5 0.5,11 2 C10.5 1,9.5 1,9 2.5 C10 2,11 2.5,11 3.5 C11.5 2.5,12.5 2,14 1Z" fill="#3D4A2E" opacity="0.9"/>
+    <path d="M14 23 C13.8 24.5,13.9 26,14 27 C14.1 26,14.2 24.5,14 23Z" fill="#8B3A1A"/>
+  </svg>
+</div>
+
+<!-- TRANSIÇÃO DE PÁGINA -->
+<div id="page-transition"></div>
+
+<!-- NAVBAR -->
+<header class="navbar navbar--hero" role="banner">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Ôxi — Página Inicial">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" fill="none">
+        <g transform="translate(10,8)">
+          <path d="M30 6 C28 3,25 2,23 4.5 C22 6,23 9,24.5 10.5" stroke="#A0522D" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+          <path d="M23 4.5 C20 1.5,17 3.5,19 7 C20.5 9,23 8,23 4.5Z" fill="#3D4A2E" opacity="0.8"/>
+          <path d="M24.5 10.5 C26 12,29 15.5,30.5 22 C32 28.5,31.5 36,29.5 42 C28 46.5,25 49.5,22 50 C19 50.5,16 48.5,14.5 44.5 C12.5 39,12.5 31.5,14 25 C15.5 18.5,19 13.5,21.5 11.5 C22.5 10.5,23.5 10.5,24.5 10.5Z" fill="#A0522D"/>
+          <path d="M22 50 C21.5 52.5,21 55.5,21.5 57.5 C21.8 59,23 59,23.3 57.5 C23.8 55.5,23 52.5,22 50Z" fill="#8B3A1A"/>
+        </g>
+        <text x="65" y="62" font-family="'Cormorant Garamond',Georgia,serif" font-size="58" font-weight="300" letter-spacing="6" fill="#3D4A2E">ÔXI</text>
+        <line x1="65" y1="70" x2="268" y2="70" stroke="#A0522D" stroke-width="0.7" opacity="0.5"/>
+        <text x="65" y="83" font-family="'DM Sans','Helvetica Neue',sans-serif" font-size="8.5" font-weight="300" letter-spacing="4.5" fill="#3D4A2E" opacity="0.7">COZINHA NORDESTINA</text>
+      </svg>
+    </a>
+    <nav class="navbar__nav" aria-label="Menu principal">
+      <a href="cardapio.html" class="navbar__link">Cardápio</a>
+      <a href="chef.html" class="navbar__link">Chef</a>
+      <a href="nossa-terra.html" class="navbar__link">Nossa Terra</a>
+      <a href="eventos.html" class="navbar__link">Eventos</a>
+      <a href="blog/post-1.html" class="navbar__link">Blog</a>
+      <a href="contato.html" class="navbar__link">Contato</a>
+    </nav>
+    <a href="contato.html" class="navbar__cta">Reservar →</a>
+    <button class="navbar__hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="navbar__fullmenu" role="dialog" aria-label="Menu de navegação">
+  <div class="fullmenu__bg-text">NORDESTE</div>
+  <nav class="fullmenu__nav">
+    <a href="index.html"       class="fullmenu__link">Início</a>
+    <a href="cardapio.html"    class="fullmenu__link">Cardápio</a>
+    <a href="chef.html"        class="fullmenu__link">Chef</a>
+    <a href="nossa-terra.html" class="fullmenu__link">Nossa Terra</a>
+    <a href="eventos.html"     class="fullmenu__link">Eventos</a>
+    <a href="blog/post-1.html" class="fullmenu__link">Blog</a>
+    <a href="contato.html"     class="fullmenu__link">Contato</a>
+  </nav>
+  <div class="fullmenu__footer">
+    <p>@oxirestaurante</p>
+    <p>Itacaré, Bahia — Brasil</p>
+  </div>
+</div>
+
+<main id="main-content">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero" aria-label="Apresentação Ôxi">
+  <div class="hero__bg gsap-parallax">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=80&auto=format&fit=crop" alt="Ambiente do restaurante Ôxi" class="hero__bg-img" loading="eager"/>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <div class="hero__phrase">
+      <svg class="hero__phrase-svg" viewBox="0 0 480 52" fill="none" aria-hidden="true">
+        <text x="50%" y="40" text-anchor="middle" font-family="'Playfair Display',Georgia,serif" font-style="italic" font-size="30" fill="none" stroke="#F5EDD6" stroke-width="0.5" stroke-dasharray="1000" stroke-dashoffset="1000" class="hero__phrase-text">Onde o sertão vira arte</text>
+      </svg>
+    </div>
+    <h1 class="hero__title" aria-label="Ôxi">
+      <span class="letter">Ô</span><span class="letter">x</span><span class="letter">i</span>
+    </h1>
+    <p class="hero__subtitle">COZINHA NORDESTINA</p>
+    <div class="hero__btns">
+      <a href="cardapio.html" class="btn btn--secondary">Ver Cardápio →</a>
+      <a href="contato.html" class="btn btn--outline">Fazer Reserva →</a>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <svg width="20" height="34" viewBox="0 0 20 34" fill="none">
+      <rect x="1" y="1" width="18" height="28" rx="9" stroke="rgba(245,237,214,0.5)" stroke-width="1.2"/>
+      <rect x="9" y="6" width="2" height="6" rx="1" fill="rgba(245,237,214,0.7)" class="scroll-dot"/>
+    </svg>
+    <span>Scroll</span>
+  </div>
+</section>
+<!-- ═══════════ MARQUEE ═══════════ -->
+<section class="marquee-section bg-verde" aria-hidden="true">
+  <div class="marquee">
+    <div class="marquee__inner">
+      <span>Carne de Sol</span><span class="marquee__dot">✦</span>
+      <span>Macaxeira</span><span class="marquee__dot">✦</span>
+      <span>Queijo Coalho</span><span class="marquee__dot">✦</span>
+      <span class="marquee__giro">Vixe, que sabor!</span><span class="marquee__dot">✦</span>
+      <span>Pimenta de Cheiro</span><span class="marquee__dot">✦</span>
+      <span>Maxixe</span><span class="marquee__dot">✦</span>
+      <span>Feijão Verde</span><span class="marquee__dot">✦</span>
+      <span class="marquee__giro">Arretado demais</span><span class="marquee__dot">✦</span>
+      <span>Baião de Dois</span><span class="marquee__dot">✦</span>
+      <span>Tapioca</span><span class="marquee__dot">✦</span>
+      <span>Caju</span><span class="marquee__dot">✦</span>
+      <span>Rapadura</span><span class="marquee__dot">✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ MANIFESTO ═══════════ -->
+<section class="manifesto section-padding" aria-labelledby="manifesto-title">
+  <div class="container">
+    <div class="manifesto__grid">
+      <div class="manifesto__left gsap-fade-up">
+        <span class="overline">O Restaurante</span>
+        <h2 class="manifesto__title" id="manifesto-title">
+          Ôxi
+          <em class="script-accent manifesto__script">é como a gente diz</em>
+        </h2>
+      </div>
+      <div class="manifesto__right gsap-fade-up">
+        <p class="manifesto__text">Aqui, cada prato é uma história contada com as mãos. Ingredientes que a terra dá, técnica que o mundo ensinou, e alma que só o Nordeste tem. No Ôxi, comer é um ato de pertencimento.</p>
+        <a href="chef.html" class="btn btn--text manifesto__cta">Conheça nossa história →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ DESTAQUES ═══════════ -->
+<section class="destaques section-padding bg-areia-esc" aria-labelledby="destaques-title">
+  <div class="container">
+    <div class="section-header gsap-fade-up">
+      <span class="overline">Descubra</span>
+      <h2 id="destaques-title">O universo Ôxi</h2>
+    </div>
+    <div class="destaques__grid gsap-stagger">
+      <a href="cardapio.html" class="destaque-card gsap-stagger-item">
+        <div class="destaque-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80&auto=format&fit=crop" alt="Cardápio Ôxi"/>
+          <div class="overlay"><span class="overlay__text">Ver Cardápio →</span></div>
+        </div>
+        <div class="destaque-card__body">
+          <span class="card__tag">Semana a semana</span>
+          <h3>O Cardápio</h3>
+          <p>Criações sazonais escritas no quadro — porque a cozinha não pode ser estática.</p>
+        </div>
+      </a>
+      <a href="chef.html" class="destaque-card gsap-stagger-item">
+        <div class="destaque-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80&auto=format&fit=crop" alt="Chef Tomás Alencar"/>
+          <div class="overlay"><span class="overlay__text">Conhecer o Chef →</span></div>
+        </div>
+        <div class="destaque-card__body">
+          <span class="card__tag">A mente por trás</span>
+          <h3>O Chef</h3>
+          <p>Tomás Alencar — nordestino que viu o mundo e voltou pra casa com o que aprendeu.</p>
+        </div>
+      </a>
+      <a href="nossa-terra.html" class="destaque-card gsap-stagger-item">
+        <div class="destaque-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=800&q=80&auto=format&fit=crop" alt="Itacaré, Bahia"/>
+          <div class="overlay"><span class="overlay__text">Explorar a Terra →</span></div>
+        </div>
+        <div class="destaque-card__body">
+          <span class="card__tag">Itacaré, Bahia</span>
+          <h3>Nossa Terra</h3>
+          <p>A mata atlântica, o Rio de Contas, o mar — tudo que está no prato começa aqui fora.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PRATOS ASSINATURA ═══════════ -->
+<section class="pratos section-padding" aria-labelledby="pratos-title">
+  <div class="container">
+    <div class="section-header gsap-fade-up">
+      <span class="overline">Permanências</span>
+      <h2 id="pratos-title">Pratos que ficam</h2>
+    </div>
+    <div class="pratos__grid gsap-stagger">
+      <article class="prato-card gsap-stagger-item">
+        <div class="prato-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=700&q=80&auto=format&fit=crop" alt="Carne de Sol na Pedra"/>
+          <div class="overlay"><div class="prato-card__hover"><p>Carne maturada 48h, finalizada na pedra vulcânica. Purê de macaxeira com manteiga de garrafa.</p></div></div>
+        </div>
+        <div class="prato-card__body">
+          <h4>Carne de Sol na Pedra</h4>
+          <span class="prato-card__tag">Prato Principal</span>
+        </div>
+      </article>
+      <article class="prato-card gsap-stagger-item">
+        <div class="prato-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=700&q=80&auto=format&fit=crop" alt="Baião de Dois Contemporâneo"/>
+          <div class="overlay"><div class="prato-card__hover"><p>Feijão verde, arroz arbóreo, queijo coalho artesanal e ovo caipira. Uma releitura que respeita a origem.</p></div></div>
+        </div>
+        <div class="prato-card__body">
+          <h4>Baião de Dois</h4>
+          <span class="prato-card__tag">Contemporâneo</span>
+        </div>
+      </article>
+      <article class="prato-card gsap-stagger-item">
+        <div class="prato-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=700&q=80&auto=format&fit=crop" alt="Moqueca de Caju"/>
+          <div class="overlay"><div class="prato-card__hover"><p>Caju verde ao leite de coco artesanal, azeite de dendê, pimenta-de-cheiro e arroz nordestino.</p></div></div>
+        </div>
+        <div class="prato-card__body">
+          <h4>Moqueca de Caju</h4>
+          <span class="prato-card__tag">Assinatura</span>
+        </div>
+      </article>
+      <article class="prato-card gsap-stagger-item">
+        <div class="prato-card__img image-overlay-wrap">
+          <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=700&q=80&auto=format&fit=crop" alt="Bolo de Rolo Revisitado"/>
+          <div class="overlay"><div class="prato-card__hover"><p>Bolo de rolo de goiabada caseira, creme de queijo coalho, calda de rapadura e flor de sal.</p></div></div>
+        </div>
+        <div class="prato-card__body">
+          <h4>Bolo de Rolo Revisitado</h4>
+          <span class="prato-card__tag">Sobremesa</span>
+        </div>
+      </article>
+    </div>
+    <div class="pratos__cta gsap-fade-up">
+      <a href="cardapio.html" class="btn btn--outline-dark">Ver Cardápio Completo →</a>
+    </div>
+  </div>
+</section>
+<!-- ═══════════ CHEF PREVIEW ═══════════ -->
+<section class="chef-preview section-padding bg-verde" aria-labelledby="chef-preview-title">
+  <div class="bg-text bg-text--dark chef-preview__bg">TOMÁS</div>
+  <div class="container">
+    <div class="chef-preview__grid">
+      <div class="chef-preview__img gsap-reveal-img">
+        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3960303?w=800&q=80&auto=format&fit=crop" alt="Chef Tomás Alencar em ação"/>
+        <div class="chef-preview__img-caption"><span class="font-chalk">Tomás, na cozinha do Ôxi</span></div>
+      </div>
+      <div class="chef-preview__content gsap-fade-up">
+        <span class="overline" style="color:var(--cor-ferrugem)">O Chef</span>
+        <h2 id="chef-preview-title" style="color:var(--cor-areia)">Saí do Nordeste<br/><em class="script-accent">pra aprender a voltar</em></h2>
+        <div class="divider"></div>
+        <p style="color:rgba(245,237,214,0.82)">Tomás Alencar cresceu em Juazeiro do Norte cheirando a coentro e rodeado de panelas de barro. Estudou em São Paulo, cozinhou em Lisboa e em Copenhagen. Mas foi só ao voltar pra Bahia que entendeu que a maior sofisticação já estava no seu quintal.</p>
+        <a href="chef.html" class="btn btn--secondary" style="margin-top:var(--space-md)">Conheça Tomás →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GALERIA ═══════════ -->
+<section class="galeria section-padding" aria-label="Galeria Ôxi">
+  <div class="container--wide">
+    <div class="section-header gsap-fade-up" style="text-align:center">
+      <span class="overline">Imagens</span>
+      <h2>A mesa, o espaço, o sabor</h2>
+    </div>
+    <div class="galeria__grid gsap-stagger">
+      <div class="galeria__item galeria__item--tall gsap-stagger-item image-overlay-wrap">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop" alt="Prato contemporâneo nordestino" class="img-cover"/>
+      </div>
+      <div class="galeria__item gsap-stagger-item image-overlay-wrap">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80&auto=format&fit=crop" alt="Ambiente do restaurante" class="img-cover"/>
+      </div>
+      <div class="galeria__item gsap-stagger-item image-overlay-wrap">
+        <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=600&q=80&auto=format&fit=crop" alt="Ingredientes e temperos" class="img-cover"/>
+      </div>
+      <div class="galeria__item galeria__item--wide gsap-stagger-item image-overlay-wrap">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1000&q=80&auto=format&fit=crop" alt="Mesa posta e pratos" class="img-cover"/>
+      </div>
+      <div class="galeria__item gsap-stagger-item image-overlay-wrap">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80&auto=format&fit=crop" alt="Chef finalizando prato" class="img-cover"/>
+      </div>
+      <div class="galeria__item gsap-stagger-item image-overlay-wrap">
+        <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=80&auto=format&fit=crop" alt="Detalhe gastronômico" class="img-cover"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ NOSSA TERRA PREVIEW ═══════════ -->
+<section class="nossa-terra-preview" aria-labelledby="terra-title">
+  <div class="nossa-terra-preview__bg gsap-parallax">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80&auto=format&fit=crop" alt="Costa de Itacaré, Bahia" class="img-cover"/>
+  </div>
+  <div class="nossa-terra-preview__overlay"></div>
+  <div class="nossa-terra-preview__content container">
+    <span class="overline" style="color:var(--cor-ferrugem)">Itacaré, Bahia</span>
+    <h2 id="terra-title" class="gsap-fade-up" style="color:var(--cor-areia)">A terra que<br/><em class="script-accent">alimenta a cozinha</em></h2>
+    <p class="gsap-fade-up" style="color:rgba(245,237,214,0.82);max-width:520px">Entre a mata atlântica e o oceano, Itacaré guarda produtores que cultivam com respeito ao tempo natural. Nossos ingredientes vêm de menos de 80km daqui.</p>
+    <a href="nossa-terra.html" class="btn btn--outline gsap-fade-up" style="margin-top:var(--space-md)">Conhecer a Região →</a>
+  </div>
+</section>
+
+<!-- ═══════════ EVENTOS ═══════════ -->
+<section class="eventos-preview section-padding bg-areia-esc" aria-labelledby="eventos-title">
+  <div class="container">
+    <div class="section-header gsap-fade-up">
+      <span class="overline">Experiências</span>
+      <h2 id="eventos-title">Mais do que jantar</h2>
+    </div>
+    <div class="eventos__grid gsap-stagger">
+      <article class="evento-card gsap-stagger-item">
+        <div class="evento-card__icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8C16 8 13 11 13 14.5C13 16 13.5 17.5 14.5 18.5L13 30H27L25.5 18.5C26.5 17.5 27 16 27 14.5C27 11 24 8 20 8Z" stroke="#A0522D" stroke-width="1.5" stroke-linejoin="round" fill="none"/>
+            <path d="M13 22H27" stroke="#A0522D" stroke-width="1.2"/>
+            <path d="M20 8V5" stroke="#A0522D" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M14 10L12 8" stroke="#A0522D" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M26 10L28 8" stroke="#A0522D" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="evento-card__body">
+          <span class="card__tag">Todo sábado · 10h</span>
+          <h3>Aula de Tapioca Artesanal</h3>
+          <p>Aprenda a fazer tapioca de verdade: da goma fresca ao recheio que você nunca imaginou. Com o Chef Tomás.</p>
+          <a href="eventos.html" class="btn btn--text">Saber mais →</a>
+        </div>
+      </article>
+      <article class="evento-card gsap-stagger-item">
+        <div class="evento-card__icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 12C20 12 22 9 20 6C18 9 20 12 20 12Z" fill="#A0522D"/>
+            <rect x="17" y="12" width="6" height="18" rx="1" stroke="#A0522D" stroke-width="1.5" fill="none"/>
+            <path d="M14 30H26" stroke="#A0522D" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12 34H28" stroke="#A0522D" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="evento-card__body">
+          <span class="card__tag">Primeira sexta do mês</span>
+          <h3>Jantar às Cegas Nordestino</h3>
+          <p>Cinco pratos. Sem ver o prato. Só o paladar, o olfato e a memória afetiva para te guiar.</p>
+          <a href="eventos.html" class="btn btn--text">Saber mais →</a>
+        </div>
+      </article>
+      <article class="evento-card gsap-stagger-item">
+        <div class="evento-card__icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18H28V28C28 29.1 27.1 30 26 30H14C12.9 30 12 29.1 12 28V18Z" stroke="#A0522D" stroke-width="1.5" fill="none"/>
+            <path d="M9 18H31" stroke="#A0522D" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M16 18V16" stroke="#A0522D" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M24 18V16" stroke="#A0522D" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M17 12C17 12 18.5 10 17 8C15.5 10 17 12 17 12Z" fill="#A0522D" opacity="0.7"/>
+            <path d="M23 12C23 12 24.5 10 23 8C21.5 10 23 12 23 12Z" fill="#A0522D" opacity="0.7"/>
+            <path d="M20 11C20 11 21.5 9 20 7C18.5 9 20 11 20 11Z" fill="#A0522D"/>
+          </svg>
+        </div>
+        <div class="evento-card__body">
+          <span class="card__tag">Sob consulta</span>
+          <h3>Cozinha Aberta com Tomás</h3>
+          <p>Um dia ao lado do chef — da escolha dos ingredientes à finalização dos pratos. Para grupos de até 8 pessoas.</p>
+          <a href="eventos.html" class="btn btn--text">Saber mais →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ═══════════ DEPOIMENTOS ═══════════ -->
+<section class="depoimentos section-padding" aria-labelledby="depoimentos-title">
+  <div class="container--narrow">
+    <div class="section-header gsap-fade-up" style="text-align:center">
+      <span class="overline">Quem passou por aqui</span>
+      <h2 id="depoimentos-title">O que dizem</h2>
+    </div>
+    <div class="carousel gsap-fade-up" role="region" aria-label="Depoimentos">
+      <div class="carousel__track">
+        <div class="carousel__slide">
+          <blockquote class="depoimento">
+            <p class="depoimento__text">"A Moqueca de Caju foi uma das experiências gastronômicas mais surpreendentes que já tive. Nunca imaginei que o caju poderia ser tão sublime assim."</p>
+            <footer class="depoimento__footer"><strong>Carolina Menezes</strong><span>São Paulo, SP</span></footer>
+          </blockquote>
+        </div>
+        <div class="carousel__slide">
+          <blockquote class="depoimento">
+            <p class="depoimento__text">"O Tomás conseguiu fazer algo raro: uma cozinha nordestina que é sofisticada sem perder a alma. Comi o Baião de Dois com lágrimas nos olhos — de saudade de coisas que nunca vivi."</p>
+            <footer class="depoimento__footer"><strong>Rafael Drummond</strong><span>Belo Horizonte, MG</span></footer>
+          </blockquote>
+        </div>
+        <div class="carousel__slide">
+          <blockquote class="depoimento">
+            <p class="depoimento__text">"Vim a Itacaré pelo surf. Voltarei pelo Ôxi. A Carne de Sol na Pedra é de outro nível — e o ambiente tem uma elegância discreta que combina perfeitamente com a cidade."</p>
+            <footer class="depoimento__footer"><strong>André Takahashi</strong><span>Rio de Janeiro, RJ</span></footer>
+          </blockquote>
+        </div>
+        <div class="carousel__slide">
+          <blockquote class="depoimento">
+            <p class="depoimento__text">"Fizemos o Jantar às Cegas no aniversário da minha esposa. Foi mágico. Cada prato era uma surpresa e o Tomás veio conversar conosco ao final — hospitalidade genuína."</p>
+            <footer class="depoimento__footer"><strong>Henrique Vasconcellos</strong><span>Recife, PE</span></footer>
+          </blockquote>
+        </div>
+        <div class="carousel__slide">
+          <blockquote class="depoimento">
+            <p class="depoimento__text">"Fiz a aula de tapioca com o Chef e aprendi mais sobre a culinária nordestina em duas horas do que em toda a minha vida. Voltei pra casa com receitas e com a alma mais cheia."</p>
+            <footer class="depoimento__footer"><strong>Mariana Fonseca</strong><span>Curitiba, PR</span></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="carousel__controls">
+        <button class="carousel__prev" aria-label="Anterior">←</button>
+        <div class="carousel__dots">
+          <button class="carousel__dot" aria-label="Depoimento 1"></button>
+          <button class="carousel__dot" aria-label="Depoimento 2"></button>
+          <button class="carousel__dot" aria-label="Depoimento 3"></button>
+          <button class="carousel__dot" aria-label="Depoimento 4"></button>
+          <button class="carousel__dot" aria-label="Depoimento 5"></button>
+        </div>
+        <button class="carousel__next" aria-label="Próximo">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BLOG PREVIEW ═══════════ -->
+<section class="blog-preview section-padding bg-areia-esc" aria-labelledby="blog-title">
+  <div class="container">
+    <div class="section-header flex-between gsap-fade-up">
+      <div><span class="overline">Do Ôxi pra você</span><h2 id="blog-title">Histórias da cozinha</h2></div>
+      <a href="blog/post-1.html" class="btn btn--text">Ver todos →</a>
+    </div>
+    <div class="blog__grid gsap-stagger">
+      <article class="card gsap-stagger-item">
+        <div class="image-overlay-wrap" style="aspect-ratio:16/9;overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=700&q=80&auto=format&fit=crop" alt="Pimenta de Cheiro" class="card__image" style="width:100%;height:100%;object-fit:cover"/>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Ingredientes</span>
+          <h3 class="card__title">A Pimenta de Cheiro: rainha esquecida do Nordeste</h3>
+          <p class="card__text">Aromatizante, marcante, nordestina por excelência — a pimenta de cheiro merece mais do que um canto na feira.</p>
+          <a href="blog/post-1.html" class="btn btn--text" style="margin-top:1rem">Ler artigo →</a>
+        </div>
+      </article>
+      <article class="card gsap-stagger-item">
+        <div class="image-overlay-wrap" style="aspect-ratio:16/9;overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=700&q=80&auto=format&fit=crop" alt="Macaxeira" class="card__image" style="width:100%;height:100%;object-fit:cover"/>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Cultura</span>
+          <h3 class="card__title">Macaxeira: o pão que a terra dá</h3>
+          <p class="card__text">Versátil, nutritiva e profundamente nordestina — a macaxeira é o tubérculo que alimentou gerações e merece mesas sofisticadas.</p>
+          <a href="blog/post-2.html" class="btn btn--text" style="margin-top:1rem">Ler artigo →</a>
+        </div>
+      </article>
+      <article class="card gsap-stagger-item">
+        <div class="image-overlay-wrap" style="aspect-ratio:16/9;overflow:hidden">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=80&auto=format&fit=crop" alt="Chef Tomás" class="card__image" style="width:100%;height:100%;object-fit:cover"/>
+        </div>
+        <div class="card__body">
+          <span class="card__tag">Entrevista</span>
+          <h3 class="card__title">Tomás Alencar: a volta pra casa</h3>
+          <p class="card__text">"Cozinhar é um ato político", diz o chef que percorreu a Europa e voltou ao Nordeste para mostrar que o futuro está no passado.</p>
+          <a href="blog/post-3.html" class="btn btn--text" style="margin-top:1rem">Ler artigo →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RESERVA CTA ═══════════ -->
+<section class="reserva-cta section-padding bg-verde" aria-labelledby="reserva-title">
+  <div class="container--narrow" style="text-align:center">
+    <span class="overline" style="color:var(--cor-ferrugem)">Venha nos visitar</span>
+    <h2 id="reserva-title" class="gsap-fade-up" style="color:var(--cor-areia);margin-bottom:var(--space-md)">Reserve sua<br/><em class="script-accent">experiência</em></h2>
+    <p class="gsap-fade-up" style="color:rgba(245,237,214,0.75);margin-bottom:var(--space-lg);max-width:480px;margin-left:auto;margin-right:auto">Abertos de terça a domingo. Almoço das 12h às 15h, jantar das 19h às 23h (até meia-noite nos fins de semana).</p>
+    <form class="form-reserva form-oxi gsap-fade-up" novalidate>
+      <div class="form__body">
+        <div class="form-reserva__grid">
+          <input type="text"  name="nome"     placeholder="Seu nome"   required class="form-input"/>
+          <input type="email" name="email"    placeholder="Seu e-mail" required class="form-input"/>
+          <input type="tel"   name="telefone" placeholder="Telefone"            class="form-input"/>
+          <input type="date"  name="data"                               required class="form-input"/>
+          <select name="hora" required class="form-input">
+            <option value="">Horário</option>
+            <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option>
+            <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option>
+          </select>
+          <select name="pessoas" required class="form-input">
+            <option value="">Nº de pessoas</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7 ou mais</option>
+          </select>
+        </div>
+        <select name="ocasiao" class="form-input form-input--full">
+          <option value="">Ocasião especial? (opcional)</option>
+          <option>Aniversário</option><option>Jantar Romântico</option><option>Reunião de Negócios</option><option>Degustação</option><option>Outro</option>
+        </select>
+        <button type="submit" class="btn btn--secondary form-reserva__submit">Solicitar Reserva →</button>
+      </div>
+      <div class="form__success">
+        <svg class="success-logo" viewBox="0 0 60 60" fill="none">
+          <circle cx="30" cy="30" r="28" stroke="#A0522D" stroke-width="1.5" opacity="0.5"/>
+          <path d="M18 30 L26 38 L42 22" stroke="#A0522D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Vixe, que ótimo!</h3>
+        <p>Entraremos em contato em breve para confirmar sua reserva.<br/><br/>
+        <strong style="color:var(--cor-ferrugem)">Curtiu o design do site?</strong><br/>
+        <a href="https://globallanding.com.br" target="_blank" style="color:var(--cor-ferrugem)">Entre em contato com a Global Landing →</a></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Ôxi Inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" fill="none" style="width:140px">
+          <g transform="translate(10,8)">
+            <path d="M30 6 C28 3,25 2,23 4.5 C22 6,23 9,24.5 10.5" stroke="#A0522D" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <path d="M23 4.5 C20 1.5,17 3.5,19 7 C20.5 9,23 8,23 4.5Z" fill="#3D4A2E" opacity="0.8"/>
+            <path d="M24.5 10.5 C26 12,29 15.5,30.5 22 C32 28.5,31.5 36,29.5 42 C28 46.5,25 49.5,22 50 C19 50.5,16 48.5,14.5 44.5 C12.5 39,12.5 31.5,14 25 C15.5 18.5,19 13.5,21.5 11.5 C22.5 10.5,23.5 10.5,24.5 10.5Z" fill="#A0522D"/>
+            <path d="M22 50 C21.5 52.5,21 55.5,21.5 57.5 C21.8 59,23 59,23.3 57.5 C23.8 55.5,23 52.5,22 50Z" fill="#8B3A1A"/>
+          </g>
+          <text x="65" y="62" font-family="'Cormorant Garamond',Georgia,serif" font-size="58" font-weight="300" letter-spacing="6" fill="#3D4A2E">ÔXI</text>
+          <line x1="65" y1="70" x2="268" y2="70" stroke="#A0522D" stroke-width="0.7" opacity="0.5"/>
+          <text x="65" y="83" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="300" letter-spacing="4.5" fill="#3D4A2E" opacity="0.7">COZINHA NORDESTINA</text>
+        </svg>
+        <span class="footer__logo-text">Ôxi</span>
+      </a>
+      <p class="footer__tagline">Onde o sertão vira arte</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram do Ôxi">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="#" aria-label="TikTok do Ôxi">
+          <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.2 8.2 0 004.8 1.54V6.79a4.85 4.85 0 01-1.03-.1z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__nav">
+      <div class="footer__nav-col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="chef.html">O Chef</a></li>
+          <li><a href="nossa-terra.html">Nossa Terra</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav-col">
+        <h5>Experiências</h5>
+        <ul>
+          <li><a href="eventos.html">Aula de Tapioca</a></li>
+          <li><a href="eventos.html">Jantar às Cegas</a></li>
+          <li><a href="eventos.html">Cozinha Aberta</a></li>
+          <li><a href="blog/post-1.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><a href="contato.html">Reservas</a></li>
+          <li><a href="tel:+5573999990001">(73) 99999-0001</a></li>
+          <li><a href="contato.html">Eventos Privados</a></li>
+          <li><a href="style-guide.html">Style Guide</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__address-cards">
+    <div class="footer__address-card"><h4>Endereço</h4><p>Rua das Pitangueiras, 142<br/>Centro · Itacaré, BA · 45530-000</p></div>
+    <div class="footer__address-card"><h4>Horários</h4><p>Ter–Sex: 12h–15h e 19h–23h<br/>Sáb–Dom: 12h–16h e 19h–00h<br/>Segunda: fechado</p></div>
+    <div class="footer__address-card"><h4>Contato</h4><p><a href="tel:+5573999990001">(73) 99999-0001</a><br/><a href="mailto:ola@oxi.com.br">ola@oxi.com.br</a></p></div>
+  </div>
+  <div class="footer__giant-text" aria-hidden="true">ÔXI</div>
+  <div class="footer__bottom">
+    <p>Ôxi © 2025 — Itacaré, Bahia</p>
+    <p>Design por <a href="https://globallanding.com.br" target="_blank">Global Landing →</a></p>
+  </div>
+</footer>
+
+<!-- SCRIPTS (ordem: GSAP → preloader → navbar → transitions → animations → marquee → carousel → main → Alpine) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="assets/js/preloader.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/transitions.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/marquee.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js" defer></script>
+</body>
+</html>

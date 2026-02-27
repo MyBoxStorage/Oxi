@@ -1,0 +1,98 @@
+/* ============================================
+   TRANSITIONS.CSS — ÔXI COZINHA NORDESTINA
+   ============================================ */
+
+/* Overlay de transição de página */
+#page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--cor-verde-musgo);
+  z-index: 9998;
+  transform: translateY(100%);
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Estado inicial das páginas */
+.page-content {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Campos de formulário com erro */
+.field-error {
+  border-color: var(--cor-ferrugem) !important;
+  box-shadow: 0 0 0 2px rgba(160, 82, 45, 0.2) !important;
+}
+
+/* Formulário - mensagem de sucesso */
+.form__success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-lg);
+  min-height: 300px;
+}
+
+.form__success h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--cor-areia);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.form__success p {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: rgba(245,237,214,0.75);
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.form__success .success-logo {
+  width: 60px;
+  margin-bottom: var(--space-md);
+  opacity: 0.8;
+}
+
+/* Hover images overlay */
+.image-overlay-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay-wrap .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(61,74,46,0.7);
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.image-overlay-wrap:hover .overlay { opacity: 1; }
+.image-overlay-wrap:hover img { transform: scale(1.05); }
+
+.image-overlay-wrap img {
+  transition: transform var(--duration-slow) var(--ease-out);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay__text {
+  color: var(--cor-areia);
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  transform: translateY(10px);
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.image-overlay-wrap:hover .overlay__text {
+  transform: translateY(0);
+}

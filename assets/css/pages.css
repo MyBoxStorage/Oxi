@@ -1,0 +1,1320 @@
+/* ============================================================
+   ÔXI — COZINHA NORDESTINA
+   CSS Adicional: Páginas Chef, Nossa Terra, Eventos, Contato, Blog
+   ============================================================ */
+
+/* ── CHEF PAGE ───────────────────────────────────────────── */
+/* Hero interno (60vh) — base também usada em outras páginas com pages.css */
+.page-hero {
+  margin-top: -72px;
+  padding-top: 72px;
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.page-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+.page-hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(28, 36, 22, 0.75) 0%, rgba(28, 36, 22, 0.6) 100%);
+  z-index: 1;
+}
+.page-hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-md);
+}
+.page-hero__title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 400;
+  color: var(--areia);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+.page-hero__subtitle {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: rgba(245, 237, 214, 0.8);
+}
+.page-hero--chef { min-height: 60vh; }
+.page-hero__subtitle--script {
+  font-family: var(--font-script);
+  font-style: italic;
+}
+
+.chef-bio {
+  background: var(--areia);
+}
+
+.chef-bio__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: start;
+}
+
+.chef-bio__media {
+  position: sticky;
+  top: calc(80px + var(--space-8));
+}
+
+.chef-bio__photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+.chef-bio__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.chef-bio__content .overline {
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.chef-bio__headline {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--verde-musgo);
+  line-height: 1.2;
+  margin-bottom: var(--space-8);
+}
+
+.chef-bio__text {
+  font-size: var(--text-base);
+  color: var(--cinza-texto);
+  line-height: 1.85;
+  margin-bottom: var(--space-6);
+}
+.chef-bio__text:last-child { margin-bottom: 0; }
+
+/* Filosofia */
+.chef-filosofia {
+  background: var(--verde-musgo);
+}
+
+.chef-filosofia .section-header .overline {
+  color: rgba(245, 237, 214, 0.75);
+}
+
+.chef-filosofia .section-header h2 {
+  color: var(--areia);
+}
+
+.chef-filosofia__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.filosofia-card {
+  padding: var(--space-8);
+  background: rgba(245, 237, 214, 0.05);
+  border: 1px solid rgba(245, 237, 214, 0.1);
+  border-radius: var(--radius-lg);
+}
+
+.filosofia-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: var(--space-4);
+  display: block;
+}
+
+.filosofia-card__number {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  color: rgba(160, 82, 45, 0.3);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+}
+
+.filosofia-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--areia);
+  margin-bottom: var(--space-4);
+}
+
+.filosofia-card__text {
+  font-size: var(--text-sm);
+  color: rgba(245, 237, 214, 0.65);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Chef: linha do tempo (scroll horizontal no mobile) */
+.chef-timeline {
+  background: var(--branco);
+}
+
+.chef-timeline__track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.chef-timeline__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 140px;
+  padding: var(--space-4) var(--space-6);
+  background: var(--areia);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--areia-escuro);
+}
+
+.chef-timeline__year {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--ferrugem);
+  margin-bottom: var(--space-2);
+}
+
+.chef-timeline__text {
+  font-size: var(--text-sm);
+  color: var(--cinza-texto);
+  line-height: 1.5;
+}
+
+/* Chef: citações em destaque */
+.chef-quotes {
+  background: var(--areia-escuro);
+  padding: var(--section-padding-y) 0;
+}
+
+.chef-quote {
+  margin: 0 0 var(--space-12);
+  padding: 0;
+  border: none;
+  border-left: 4px solid var(--ferrugem);
+  padding-left: var(--space-8);
+}
+
+.chef-quote:last-child { margin-bottom: 0; }
+
+.chef-quote p {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-style: italic;
+  color: var(--verde-musgo);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Chef: CTA final */
+.chef-cta {
+  background: var(--verde-musgo);
+  padding: var(--section-padding-y) 0;
+}
+
+.chef-cta__inner {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.chef-cta__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--areia);
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.chef-cta__sub {
+  font-size: var(--text-base);
+  color: rgba(245, 237, 214, 0.85);
+  margin-bottom: var(--space-8);
+}
+
+.chef-cta .btn--primary {
+  background: var(--areia);
+  color: var(--verde-musgo);
+  border-color: var(--areia);
+}
+.chef-cta .btn--primary:hover {
+  background: var(--ferrugem-claro);
+  color: var(--areia);
+  border-color: var(--ferrugem-claro);
+}
+
+/* ── NOSSA TERRA PAGE ────────────────────────────────────── */
+/* Hero Terra 70vh + overlay à esquerda */
+.page-hero--terra {
+  min-height: 70vh;
+}
+
+.page-hero__overlay--left {
+  background: linear-gradient(to right, rgba(28, 36, 22, 0.85) 0%, rgba(28, 36, 22, 0.4) 50%, transparent 100%);
+}
+
+.page-hero__phrase {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: rgba(245, 237, 214, 0.9);
+  margin-top: var(--space-4);
+  max-width: 28ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sobre Itacaré: 2 colunas (texto esquerda, imagem direita) */
+.terra-intro {
+  background: var(--areia);
+}
+
+.terra-intro--inverse .terra-intro__grid {
+  direction: ltr;
+}
+
+.terra-intro--inverse .terra-intro__content {
+  order: 1;
+}
+
+.terra-intro--inverse .terra-intro__media {
+  order: 2;
+}
+
+.terra-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.terra-intro__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--verde-musgo);
+  margin-bottom: var(--space-6);
+  line-height: 1.2;
+}
+
+.terra-intro__text {
+  font-size: var(--text-base);
+  color: var(--cinza-texto);
+  line-height: 1.85;
+  margin: 0;
+}
+
+.terra-intro__img-wrap {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.terra-intro__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.terra-intro__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.terra-intro__img-main {
+  grid-column: span 2;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.terra-intro__img-main img { width: 100%; height: 100%; object-fit: cover; }
+
+.terra-intro__img-small {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+.terra-intro__img-small img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Mapa SVG */
+.terra-mapa {
+  background: var(--verde-musgo);
+}
+
+.terra-mapa--areia {
+  background: var(--areia-escuro);
+}
+
+.terra-mapa__wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.terra-mapa__svg {
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  filter: drop-shadow(0 20px 60px rgba(0,0,0,0.15));
+}
+
+.terra-mapa--areia .terra-mapa__svg {
+  filter: drop-shadow(0 12px 40px rgba(0,0,0,0.12));
+}
+
+.terra-mapa__svg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.terra-mapa__caption {
+  font-size: var(--text-sm);
+  color: var(--cinza-texto);
+  margin-top: var(--space-6);
+  font-style: italic;
+}
+
+.terra-mapa--areia .terra-mapa__caption {
+  color: var(--verde-musgo);
+}
+
+/* Fornecedores: 4 cards */
+.terra-fornecedores {
+  background: var(--areia);
+  padding: var(--section-padding-y) 0;
+}
+
+.terra-fornecedores__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+}
+
+.terra-fornecedor {
+  background: var(--branco);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  text-align: center;
+  border: 1px solid var(--areia-escuro);
+  transition: box-shadow var(--duration-base) var(--ease-out);
+}
+
+.terra-fornecedor:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.terra-fornecedor__icon {
+  font-size: 2.25rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.terra-fornecedor__nome {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--verde-musgo);
+  margin-bottom: var(--space-3);
+  line-height: 1.25;
+}
+
+.terra-fornecedor__desc {
+  font-size: var(--text-sm);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Ingredientes: grid magazine 5 cols / 2 mobile */
+.terra-ingredientes {
+  background: var(--branco);
+  padding: var(--section-padding-y) 0;
+}
+
+.terra-ingredientes__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-10);
+}
+
+.terra-ingrediente {
+  background: var(--areia);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--areia-escuro);
+  transition: box-shadow var(--duration-base) var(--ease-out);
+}
+
+.terra-ingrediente:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.terra-ingrediente__img {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.terra-ingrediente__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.terra-ingrediente:hover .terra-ingrediente__img img {
+  transform: scale(1.05);
+}
+
+.terra-ingrediente__nome {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--verde-musgo);
+  margin: var(--space-4) var(--space-4) var(--space-2);
+  line-height: 1.2;
+}
+
+.terra-ingrediente__frase {
+  font-size: var(--text-xs);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+  margin: 0 var(--space-4) var(--space-4);
+}
+
+/* Parallax 80km */
+.terra-parallax-80 {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.terra-parallax-80__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.terra-parallax-80__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.terra-parallax-80__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 36, 22, 0.7);
+  z-index: 1;
+}
+
+.terra-parallax-80__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: var(--space-12);
+}
+
+.terra-parallax-80__frase {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, var(--text-giant));
+  font-weight: 400;
+  color: var(--areia);
+  line-height: 1.1;
+  margin: 0 0 var(--space-4);
+  letter-spacing: 0.02em;
+}
+
+.terra-parallax-80__sub {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: var(--text-xl);
+  color: rgba(245, 237, 214, 0.9);
+  margin: 0;
+}
+
+/* Pin animado */
+.mapa-pin {
+  animation: pin-pulse 2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes pin-pulse {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%       { transform: translateY(-4px) scale(1.1); }
+}
+
+.mapa-pin__ripple {
+  animation: ripple 2s ease-out infinite;
+  transform-origin: center;
+}
+
+@keyframes ripple {
+  0%   { r: 8; opacity: 0.6; }
+  100% { r: 20; opacity: 0; }
+}
+
+/* ── EVENTOS PAGE ────────────────────────────────────────── */
+.eventos-grid-full {
+  background: var(--areia);
+}
+
+.eventos-grid-full__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.evento-card-full {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 0;
+  background: var(--branco);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+  margin-bottom: 3rem;
+  min-height: 420px;
+  border: 1px solid var(--areia-escuro);
+  transition: box-shadow var(--duration-base) var(--ease-out);
+}
+.evento-card-full:hover { box-shadow: var(--shadow-lg); }
+
+.evento-card-full__img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+}
+.evento-card-full__img img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--duration-xslow) var(--ease-out);
+}
+.evento-card-full:hover .evento-card-full__img img {
+  transform: scale(1.05);
+}
+
+.evento-card-full__body {
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.evento-card-full__tag {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ferrugem);
+  margin-bottom: var(--space-3);
+}
+
+.evento-card-full__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--verde-musgo);
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+}
+
+.evento-card-full__desc {
+  font-size: var(--text-sm);
+  color: var(--cinza-texto);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+
+.evento-card-full__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: var(--areia);
+  border-radius: var(--radius-md);
+}
+
+.evento-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--cinza-texto);
+}
+
+.evento-info-icon {
+  font-size: 0.9rem;
+  width: 20px;
+  text-align: center;
+}
+
+.evento-card-full__meta {
+  font-size: var(--text-sm);
+  color: var(--ferrugem);
+  font-weight: 500;
+  margin-bottom: var(--space-6);
+}
+
+/* Evento card: layout alternado (imagem à direita) */
+.evento-card-full--reverse {
+  grid-template-columns: 1fr 360px;
+}
+.evento-card-full--reverse .evento-card-full__img {
+  order: 2;
+}
+.evento-card-full--reverse .evento-card-full__img,
+.evento-card-full--reverse .evento-card-full__body {
+  direction: ltr;
+}
+
+/* Eventos: hero 50vh */
+.page-hero--eventos {
+  min-height: 50vh;
+}
+
+/* FAQ (fundo areia-escura, accordion) */
+.eventos-faq {
+  background: var(--areia-escuro);
+  padding: var(--section-padding-y) 0;
+}
+
+.eventos-faq__list {
+  margin-top: var(--space-10);
+}
+
+.eventos-faq__item {
+  border-bottom: 1px solid rgba(61, 74, 46, 0.12);
+}
+.eventos-faq__item:first-child {
+  border-top: 1px solid rgba(61, 74, 46, 0.12);
+}
+
+.eventos-faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6) 0;
+  background: none;
+  border: none;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--verde-musgo);
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--duration-fast);
+}
+.eventos-faq__question:hover {
+  color: var(--ferrugem);
+}
+.eventos-faq__question::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--ferrugem);
+  flex-shrink: 0;
+  margin-left: var(--space-4);
+  transition: transform var(--duration-base);
+}
+.eventos-faq__item--open .eventos-faq__question::after {
+  transform: rotate(45deg);
+}
+
+.eventos-faq__answer {
+  overflow: hidden;
+}
+.eventos-faq__answer p {
+  margin: 0 0 var(--space-6);
+  padding-bottom: var(--space-6);
+  font-size: var(--text-base);
+  color: var(--cinza-texto);
+  line-height: 1.7;
+}
+.eventos-faq__answer a {
+  color: var(--ferrugem);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Formulário eventos (fundo verde-musgo) */
+.eventos-form {
+  background: var(--verde-musgo);
+  padding: var(--section-padding-y) 0;
+}
+
+.eventos-form .section-header .overline {
+  color: rgba(245, 237, 214, 0.75);
+}
+.eventos-form .section-header h2 {
+  color: var(--areia);
+}
+
+.form-eventos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-eventos .form-input,
+.form-eventos .form-textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  background: rgba(245, 237, 214, 0.12);
+  border: 1px solid rgba(245, 237, 214, 0.25);
+  border-radius: var(--radius-sm);
+  color: var(--areia);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  transition: border-color var(--duration-fast), background var(--duration-fast);
+}
+.form-eventos .form-input::placeholder,
+.form-eventos .form-textarea::placeholder {
+  color: rgba(245, 237, 214, 0.5);
+}
+.form-eventos .form-input:focus,
+.form-eventos .form-textarea:focus {
+  border-color: var(--ferrugem-claro);
+  background: rgba(245, 237, 214, 0.18);
+}
+.form-eventos .form-input option {
+  background: var(--verde-escuro);
+  color: var(--areia);
+}
+.form-eventos .form-input--full,
+.form-eventos .form-textarea {
+  grid-column: 1 / -1;
+}
+.form-eventos .form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-eventos__submit {
+  width: 100%;
+  justify-content: center;
+  padding: 1.1rem;
+  margin-top: 0.5rem;
+}
+.form-eventos .form__success h3,
+.form-eventos .form__success p,
+.form-eventos .form__success a {
+  color: var(--areia);
+}
+
+/* ── CONTATO PAGE ────────────────────────────────────────── */
+/* Hero 40vh fundo sólido (sem imagem) */
+.page-hero--contato {
+  min-height: 40vh;
+  background: var(--verde-musgo);
+}
+.page-hero--contato .page-hero__title {
+  color: var(--areia);
+}
+.page-hero--contato .page-hero__subtitle {
+  color: rgba(245, 237, 214, 0.85);
+}
+
+.contato-page {
+  background: var(--areia);
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: start;
+}
+
+.contato-form-wrap {
+  /* form container */
+}
+
+.contato-info {
+  position: sticky;
+  top: calc(80px + var(--space-8));
+}
+
+.contato-info__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  color: var(--verde-musgo);
+  line-height: 1.15;
+  margin-bottom: var(--space-6);
+}
+
+.contato-info__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--space-10);
+}
+
+.contato-item {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.contato-item__icon {
+  width: 44px;
+  height: 44px;
+  background: var(--verde-musgo);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--areia);
+}
+.contato-item__icon svg {
+  flex-shrink: 0;
+}
+
+.contato-item__content {}
+.contato-item__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ferrugem);
+  margin-bottom: var(--space-1);
+}
+.contato-item__value {
+  font-size: var(--text-base);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+  margin: 0;
+}
+.contato-item__value a {
+  color: var(--verde-musgo);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.contato-item__value a:hover {
+  color: var(--ferrugem);
+}
+
+/* Mapa contato (areia-escura, max 500px) */
+.contato-mapa {
+  background: var(--areia-escuro);
+  padding: var(--section-padding-y) 0;
+}
+
+.contato-mapa__wrapper {
+  max-width: 500px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.contato-mapa__svg {
+  width: 100%;
+  margin-inline: auto;
+  filter: drop-shadow(0 12px 40px rgba(0,0,0,0.12));
+}
+
+.contato-mapa__svg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contato-mapa__caption {
+  font-size: var(--text-sm);
+  color: var(--verde-musgo);
+  margin-top: var(--space-6);
+  font-style: italic;
+}
+
+/* Como chegar (3 cards) */
+.contato-como-chegar {
+  background: var(--areia);
+  padding: var(--section-padding-y) 0;
+}
+
+.contato-como-chegar__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+}
+
+.contato-como-card {
+  background: var(--branco);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  text-align: center;
+  border: 1px solid var(--areia-escuro);
+  transition: box-shadow var(--duration-base) var(--ease-out);
+}
+
+.contato-como-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.contato-como-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.contato-como-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--verde-musgo);
+  margin-bottom: var(--space-3);
+  line-height: 1.25;
+}
+
+.contato-como-card__text {
+  font-size: var(--text-sm);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Horários */
+.horarios {
+  background: var(--verde-musgo);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.horarios__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--areia);
+  margin-bottom: var(--space-5);
+}
+
+.horario-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-3);
+  border-bottom: 1px solid rgba(245, 237, 214, 0.1);
+}
+.horario-item:last-child { border-bottom: none; }
+
+.horario-item__dia {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--areia);
+}
+
+.horario-item__hora {
+  font-size: var(--text-sm);
+  color: rgba(245, 237, 214, 0.65);
+}
+
+.horario-item__hora.fechado {
+  color: var(--ferrugem-claro);
+  font-style: italic;
+}
+
+/* Formulário contato */
+.contato-form {
+  background: var(--branco);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  box-shadow: var(--shadow-md);
+}
+
+.contato-form .form__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-form__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--verde-musgo);
+  margin-bottom: var(--space-8);
+}
+
+.contato-form .form-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contato-form__submit {
+  width: 100%;
+  justify-content: center;
+  padding: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.contato-form .form-input,
+.contato-form .form-textarea,
+.contato-form .form-select {
+  background: var(--areia);
+  border: 1px solid var(--areia-escuro);
+  color: var(--preto);
+}
+
+.contato-form .form-input::placeholder,
+.contato-form .form-textarea::placeholder {
+  color: var(--cinza-claro);
+}
+
+.contato-form .form-input:focus,
+.contato-form .form-textarea:focus {
+  border-color: var(--verde-musgo);
+  background: var(--branco);
+}
+
+.contato-form .form-label { color: var(--cinza-texto); }
+
+.contato-form .form-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* ── BLOG PAGE ───────────────────────────────────────────── */
+.blog-page__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.blog-page__posts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.blog-post-card {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-6);
+  background: var(--branco);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--areia-escuro);
+  transition: box-shadow var(--duration-base) var(--ease-out);
+  cursor: pointer;
+}
+.blog-post-card:hover { box-shadow: var(--shadow-md); }
+
+.blog-post-card__img {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.blog-post-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-xslow) var(--ease-out);
+}
+.blog-post-card:hover .blog-post-card__img img { transform: scale(1.05); }
+
+.blog-post-card__body {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Sidebar blog */
+.blog-sidebar {
+  position: sticky;
+  top: calc(80px + var(--space-6));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.sidebar-widget {
+  background: var(--branco);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  border: 1px solid var(--areia-escuro);
+}
+
+.sidebar-widget__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--verde-musgo);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--areia-escuro);
+}
+
+.sidebar-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--areia-escuro);
+  font-size: var(--text-sm);
+  color: var(--cinza-texto);
+  transition: color var(--duration-fast) var(--ease-out);
+  cursor: pointer;
+}
+.sidebar-category:last-child { border-bottom: none; }
+.sidebar-category:hover { color: var(--ferrugem); }
+
+.sidebar-category__count {
+  font-size: var(--text-xs);
+  background: var(--areia-escuro);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-full);
+}
+
+/* ── POST INDIVIDUAL ─────────────────────────────────────── */
+.post-hero {
+  background: var(--verde-musgo);
+}
+
+.post-content {
+  background: var(--areia);
+}
+
+.post-body {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.post-body p {
+  font-size: var(--text-base);
+  color: var(--cinza-texto);
+  line-height: 1.9;
+  margin-bottom: var(--space-6);
+}
+
+.post-body h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--verde-musgo);
+  margin-top: var(--space-10);
+  margin-bottom: var(--space-5);
+}
+
+.post-body h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--verde-musgo);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-4);
+}
+
+.post-body blockquote {
+  border-left: 3px solid var(--ferrugem);
+  padding-left: var(--space-6);
+  margin-block: var(--space-8);
+}
+.post-body blockquote p {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-style: italic;
+  color: var(--verde-musgo);
+  margin-bottom: 0;
+}
+
+.post-body .post-img {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-block: var(--space-8);
+}
+.post-body .post-img img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.post-body .post-img figcaption {
+  font-size: var(--text-xs);
+  color: var(--cinza-claro);
+  text-align: center;
+  margin-top: var(--space-2);
+  font-style: italic;
+}
+
+/* ── RESPONSIVE PAGES ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .chef-bio__grid { grid-template-columns: 1fr; }
+  .chef-bio__media { position: static; }
+  .chef-filosofia__grid { grid-template-columns: repeat(2, 1fr); }
+  .terra-intro__grid { grid-template-columns: 1fr; }
+  .terra-intro--inverse .terra-intro__content,
+  .terra-intro--inverse .terra-intro__media { order: unset; }
+  .terra-fornecedores__grid { grid-template-columns: repeat(2, 1fr); }
+  .terra-ingredientes__grid { grid-template-columns: repeat(3, 1fr); }
+  .eventos-grid-full__list { grid-template-columns: 1fr; }
+  .evento-card-full { grid-template-columns: 1fr; }
+  .evento-card-full__img { aspect-ratio: 16 / 9; }
+  .contato-grid { grid-template-columns: 1fr; }
+  .contato-info { position: static; }
+  .contato-como-chegar__grid { grid-template-columns: 1fr; }
+  .blog-page__grid { grid-template-columns: 1fr; }
+  .blog-sidebar { position: static; }
+}
+
+@media (max-width: 768px) {
+  .page-hero--chef { min-height: 50vh; }
+  .page-hero--terra { min-height: 55vh; }
+  .page-hero__phrase { font-size: var(--text-base); }
+  .form-eventos__grid { grid-template-columns: 1fr; }
+  .terra-fornecedores__grid { grid-template-columns: 1fr; }
+  .terra-ingredientes__grid { grid-template-columns: repeat(2, 1fr); }
+  .terra-parallax-80 { min-height: 40vh; }
+  .terra-parallax-80__frase { font-size: clamp(1.75rem, 8vw, 3rem); }
+  .chef-filosofia__grid { grid-template-columns: 1fr; }
+  .chef-timeline__track {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: var(--space-4);
+    margin-top: var(--space-6);
+    gap: var(--space-4);
+  }
+  .chef-timeline__item {
+    flex-shrink: 0;
+    min-width: 180px;
+  }
+  .blog-post-card { grid-template-columns: 1fr; }
+  .blog-post-card__img { aspect-ratio: 16 / 9; }
+}

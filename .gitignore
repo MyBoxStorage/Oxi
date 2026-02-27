@@ -1,0 +1,29 @@
+# IDE / editor
+.cursor/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Env e segredos
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Logs e temp
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Dependências (se usar Node no futuro)
+node_modules/
+
+# Build / output (se houver)
+dist/
+build/
+*.min.js.map

@@ -1,0 +1,203 @@
+/* ============================================================
+   ÔXI — COZINHA NORDESTINA
+   Componentes · Preloader & Cursor & Page Transition
+   ============================================================ */
+
+/* ── PRELOADER ──────────────────────────────────────────── */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-preloader);
+  background: var(--verde-musgo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+}
+
+.preloader__logo {
+  opacity: 0;
+  animation: preloader-logo-in 0.8s var(--ease-out) 0.3s forwards;
+}
+
+.preloader__logo svg {
+  height: 80px;
+  width: auto;
+}
+
+.preloader__pepper {
+  animation: preloader-pepper-wiggle 1s ease-in-out 1.2s 2;
+}
+
+.preloader__progress {
+  width: 120px;
+  height: 1px;
+  background: rgba(245, 237, 214, 0.2);
+  overflow: hidden;
+  margin-top: var(--space-4);
+}
+
+.preloader__progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--ferrugem);
+  animation: preloader-progress 1.5s var(--ease-out) 0.5s forwards;
+}
+
+.preloader__tagline {
+  font-family: var(--font-script);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: rgba(245, 237, 214, 0.6);
+  opacity: 0;
+  animation: preloader-logo-in 0.6s var(--ease-out) 0.8s forwards;
+}
+
+/* Saída do preloader */
+.preloader.exit {
+  transform: translateY(-100%);
+  transition: transform 0.8s var(--ease-in-out) 0.2s;
+}
+
+@keyframes preloader-logo-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes preloader-pepper-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  20%       { transform: rotate(-12deg); }
+  40%       { transform: rotate(12deg); }
+  60%       { transform: rotate(-8deg); }
+  80%       { transform: rotate(8deg); }
+}
+
+@keyframes preloader-progress {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* ── PAGE TRANSITION OVERLAY ────────────────────────────── */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--z-preloader) - 1);
+  background: var(--verde-musgo);
+  transform: translateY(100%);
+  pointer-events: none;
+}
+
+.page-transition.entering {
+  animation: transition-enter 0.5s var(--ease-in-out) forwards;
+  pointer-events: all;
+}
+
+.page-transition.leaving {
+  animation: transition-leave 0.5s var(--ease-out) forwards;
+}
+
+@keyframes transition-enter {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0%); }
+}
+
+@keyframes transition-leave {
+  from { transform: translateY(0%); }
+  to   { transform: translateY(-100%); }
+}
+
+/* ── CURSOR CUSTOMIZADO ─────────────────────────────────── */
+.custom-cursor {
+  position: fixed;
+  z-index: var(--z-cursor);
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+}
+
+.custom-cursor__pepper {
+  width: 32px;
+  height: 32px;
+  transition: transform var(--duration-base) var(--ease-bounce),
+              opacity var(--duration-fast) var(--ease-out);
+}
+
+.custom-cursor__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ferrugem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform var(--duration-base) var(--ease-bounce);
+}
+
+/* Estado hover */
+.custom-cursor.hovering .custom-cursor__pepper {
+  transform: scale(1.4) rotate(-15deg);
+}
+
+.custom-cursor.hovering .custom-cursor__dot {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* Esconde em dispositivos touch */
+@media (hover: none) {
+  .custom-cursor { display: none; }
+}
+
+/* ── SCROLL INDICATOR ────────────────────────────────────── */
+.scroll-indicator {
+  position: absolute;
+  bottom: var(--space-10);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  opacity: 0.6;
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+.scroll-indicator__text {
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--areia);
+  font-weight: 500;
+}
+
+.scroll-indicator__line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--areia), transparent);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-indicator__line::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ferrugem);
+  animation: scroll-line 2s ease-in-out infinite;
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+@keyframes scroll-line {
+  0%   { top: -100%; }
+  100% { top: 100%; }
+}
