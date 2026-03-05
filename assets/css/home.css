@@ -259,6 +259,7 @@
 .prato-card:hover .prato-card__img img { transform: scale(1.07); }
 
 .prato-card__hover { color: var(--cor-areia); font-size: var(--text-sm); line-height: 1.7; }
+.prato-card__hover p { color: var(--cor-branco); font-weight: 500; }
 
 .prato-card__body h4 {
   font-family: var(--font-display);
